@@ -1,0 +1,9 @@
+# Bundle layer for the local dsh-wsl checkout.
+#
+# plugin_manager links this checkout into the profile workspace, so the row
+# `name: dsh-wsl` resolves from <profile>/node_modules. The host half declares
+# its own inject list (['webServer', 'tools', 'subprocess']), so the row only
+# needs the id/name pair; per-run config lives in this row when overridden.
+- insert:
+    - id: dsh-wsl
+      name: dsh-wsl
